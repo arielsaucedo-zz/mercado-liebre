@@ -9,23 +9,14 @@ app.get("/", function(req, res) {
     res.sendFile(file)
 })
 
-/* Llamado a distintos CSS e imagenes*/
-app.get('*', function(req, res){
+    app.get('*', function(req, res){
 
-    // resuelve ruta de estilos
-        if(req.url.endsWith('.css')){
-            let file = path.resolve('public/styles' + req.url)
-            return res.sendFile(file)
-        }
-    
-    // resuelve ruta de imagenes
-        let images = ['jpg', 'jpeg', 'gif', 'png', 'bmp', 'webp', 'svg']
-        let ext = req.url.split('.')[1]
-        if(images.includes(ext)){
-            let file = path.resolve('public/images' + req.url)
-            return res.sendFile(file)
-        }
-    })
-
+        // resuelve ruta de estilos e imagenes
+            if(req.url.includes('.')) {
+                let file = path.resolve('public' + req.url)
+                return res.sendFile(file)
+            }
+        res.send('Not found')
+})
 /* Llamado a servidor - Puerto 3000 */
 app.listen(3000)

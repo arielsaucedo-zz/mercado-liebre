@@ -13,10 +13,37 @@ body {
 header {
     background-color: var(--color-amarillo);
 }
-nav {
-    background-color: var(--color-amarillo);
-}
 
 h2 {
     background-color: var(--color-girs-claro);
+    font-size: 24px;
+}
+
+h3{
+    font-size: 24px;
+
+}
+p {
+    font-size: 12px;
+}
+
+p.precio {
+    font-size: 18px;
+}
+
+p.desc {
+    font-size: 16px;
+    color: var(--color-verde);
+}
+
+p.prod {
+    font-size: 18px;
+}
+
+div.camion {
+    color: var(--color-verde);
+}
+
+div.foot  {
+    color: var(--color-azul);
 }

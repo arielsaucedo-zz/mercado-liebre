@@ -13,6 +13,8 @@ body {
     padding: 0px;
     background-color: var(--color-gris-claro);
     width: 100%;
+    box-sizing: content-box;
+
 }
 
 /*Estilo del header*/
@@ -70,57 +72,35 @@ div.menu:hover {
     cursor: pointer;
 }
 
-/*Estilo section banner*/
-section img.banner {
-    width: 100%;   
+/*Estilo formulario register */
+input.register {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;     
 }
 
-/*Estilo seccion principal */
-main section h2 {
-    background-color: var(--color-girs-claro);
+button.envio {
+    color: white;
+    background-color:#0044AA;
+}
+
+button.reset {
+    color: white;
+    background-color: #AA0044;
+}
+
+button.reset:hover {
+    background-color: #CC1155;
+}
+
+
+h2.register {
     font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 90%;
-    text-align: center;
-}
-
-article.primero {
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-article.ultimo {
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-main section article {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-main p.precio {
-    font-size: 18px;
-}
-
-main p.desc {
-    font-size: 16px;
-    color: var(--color-verde);
-}
-
-main p.prod {
-    font-size: 18px;
-}
-
-main div.camion {
-    color: var(--color-verde);
-}
+}    
 
 /*Estilo seccion footer*/
 footer {
@@ -145,9 +125,7 @@ footer div.foot  {
     color: var(--color-azul);
 }
 
-h2.register {
-    background-color: white;
-    font-size: 24px;
+
 }
 
 

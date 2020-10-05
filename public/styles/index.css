@@ -15,30 +15,35 @@ body {
     width: 100%;
 }
 
+.d-flex {display: flex;}
+.f-wrap {flex-wrap: wrap;}
+.fg-1 {flex-grow: 1;}
+.fz-12 {font-size: 12px;}
+.w-50 {width: 50%;}
+.w-100{width: 100%;}
+.w-30 {width: 30%;}
+.w-70 {width: 70%;}
+.f-dir-col {flex-direction: column;}
+.align-item {}
+
 /*Estilo del header*/
 header {
     background-color: var(--color-amarillo);
-    display: block;
     min-height: 100px;
     padding: 1px;
 }
 
-input.buscador {
+.header .search {
     width: 100%;
-    padding: 10px;
     border-radius: 5px;
 }
 
-header p {
+.fz-12 {
     font-size: 12px;
 }
 
 header p i {
     margin-right: 30px;
-}
-
-img.logo, input.buscador {
-    width: 50%;
 }
 
 nav.navegacion {
@@ -70,12 +75,13 @@ div.menu:hover {
     cursor: pointer;
 }
 
-/*Estilo section banner*/
-section img.banner {
-    width: 100%;   
+/*Estilo seccion principal */
+.border-prod {
+    border-top: 1px solid #ebebeb;
 }
 
-/*Estilo seccion principal */
+.al-truck {align-self: flex-end;}
+
 main section h2 {
     background-color: var(--color-girs-claro);
     font-size: 24px;
@@ -85,13 +91,13 @@ main section h2 {
     text-align: center;
 }
 
-article.primero {
+.primero {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-article.ultimo {
+.ultimo {
     margin-bottom: 20px;
     margin-left: 15px;
     margin-right: 15px;
@@ -105,21 +111,37 @@ main section article {
     background-color: white;
 }
 
-main p.precio {
+.precio {
     font-size: 18px;
 }
 
-main p.desc {
+.desc {
     font-size: 16px;
     color: var(--color-verde);
 }
 
-main p.prod {
+.prod {
     font-size: 18px;
 }
 
-main div.camion {
+.camion {
     color: var(--color-verde);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #39B54A;
+    padding: 5px;
+    display: inline-block;
+}
+
+.separador {
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+
+.separador i {
+    position: relative;
+    top: 15px;
+    margin-right: 10px;
 }
 
 /*Estilo seccion footer*/

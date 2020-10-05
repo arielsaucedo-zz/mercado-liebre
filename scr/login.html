@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Mercado Liebre</title>
-        <link  href="/styles/login.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    </head>
-    
-    <body>
-        <header>
-            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" />
-            <input class="buscador" type="search" name="buscador" placeholder="Buscar productos, marcas">
-            <p><i class="fas fa-search"></i>
-            </p>
-            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            <nav class="navegacion">
-                <ul class="links">
-                    <li><a href="*">Ofertas</a></li>
-                    <li><a href="*">Tiendas Oficiales</a></li>
-                    <li><a href="*">Vender</a></li>
-                    <li><a href="*">Ayuda</a></li>
-                    <br>
-                    <li><a href="/register">Creá tu cuenta</a><i class="fas fa-id-card"></i></li>
-                    <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt fa-2x"></i></li>
-                    <li><a href="*">Mis compras</a><i class="fas fa-shopping-basket fa-2x"></i></li>
-                </ul>
-            </nav>
-            <div class="menu">
-                <i class="fas fa-bars"></i>
-            </div>  
-        </header>
-        <main>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/register.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+    <link rel="icon" href="/images/download.png" type="image/png" />
+    <title>Mercado Liebre</title>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex">
+            <img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo w-50">
             <div>
-                <input type="text" class="login" name="usuario" id="usuario" placeholder="Nombre de usuario">
+                <input class="search " type="search" name="buscador" placeholder="Buscar productos, marcas">
+                <i class="fas fa-search"></i>
             </div>
-            <div>
-                <input type="password" class="login" name="password" id="password" placeholder="Contraseña">
+        </div>
+        <div>
+            <p class="fz-12"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navegacion">
+            <ul class="links">
+                <li><a href="*">Ofertas</a></li>
+                <li><a href="*">Tiendas Oficiales</a></li>
+                <li><a href="*">Vender</a></li>
+                <li><a href="*">Ayuda</a></li>
+                <li><a href="/register">Creá tu cuenta</a><i class="fas fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt fa-2x"></i></li>
+                <li><a href="*">Mis compras</a><i class="fas fa-shopping-basket fa-2x"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <div class="login">
+                <input class="input-forma" type="text"  name="usuario" id="usuario" placeholder="Nombre de usuario">
+                <input class="input-forma" type="password" name="password" id="password" placeholder="Contraseña">
+                <button class="input-btn login-btn" type=“submit”>Enviar</button>
             </div>
-            <form action="/">
-                <button class="login" type=“submit”>Enviar</button>
-            </form>
-        </main>  
+           
+        </form>   
+    </main>
     <footer>
         <article>
             <div class="foot"><i class="fas fa-credit-card"></i></div>
             <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
+            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es
+                seguro!</p>
         </article>
         <br>
         <article>
             <div class="foot"><i class="fas fa-gift"></i></div>
             <h3>Envío gratis desde los $ 2.500</h3>
-            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
+            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de
+                MercadoPuntos.</p>
         </article>
         <br>
         <article>
             <div class="foot"><i class="fas fa-user-shield"></i></div>
             <h3>Seguridad, de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
+            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre
+                protegid@.</p>
         </article>
         <br>
         <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
-        </footer>
-    </body>
-</html>
+    </footer>
+</body>
 
+</html>

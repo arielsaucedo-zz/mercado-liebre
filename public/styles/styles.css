@@ -1,0 +1,353 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-osc: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-gris-claro);
+    width: 100%;
+}
+
+/************ Estilo general del sitio *************/
+.d-flex {display: flex;}
+.f-wrap {flex-wrap: wrap;}
+.fg-1 {flex-grow: 1;}
+.fz-12 {font-size: 12px;}
+.w-40 {width: 40%;}
+.w-50 {width: 50%;}
+.w-100{width: 100%;}
+.w-30 {width: 30%;}
+.w-70 {width: 70%;}
+.f-dir-col {flex-direction: column;}
+.text-al-center {text-align: center;}
+.pd-5 {padding: 5%;}
+.pd-10 {padding: 10%;}
+.al-it-center { align-items: center;}
+.border-0 {border: 0px;}
+
+/*****************Estilo del header****************/
+header {
+    background-color: var(--color-amarillo);
+    min-height: 100px;
+    padding: 1px;
+}
+
+.header .search {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
+header p i {
+    margin-right: 30px;
+}
+
+nav.navegacion {
+    display: none;
+}
+
+.navegacion a {
+    text-decoration: solid;
+    color: black;
+}
+
+div.menu {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0044AA;
+    color: white;
+    font-size: 20px;;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+div.menu:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+.pos-lupa {
+    position: absolute;
+    right: 1%;
+    top: 8%;
+}
+
+/*****************Estilo seccion principal *************/
+.border-prod {
+    border-top: 1px solid #ebebeb;
+}
+
+.al-truck {align-self: flex-end;}
+
+main section h2 {
+    background-color: var(--color-girs-claro);
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.primero {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ultimo {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+main section article {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 16px;
+    color: var(--color-verde);
+}
+
+.prod {
+    font-size: 18px;
+}
+
+.camion {
+    color: var(--color-verde);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #39B54A;
+    padding: 5px;
+    display: inline-block;
+}
+
+.separador {
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+
+.separador i {
+    position: relative;
+    top: 15px;
+    margin-right: 10px;
+}
+
+.display-n {display: none;}
+
+.productos:hover .prod {display: inline;}
+.productos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.productos:hover .truck-icon {
+    animation: mymove 5s;
+}
+
+@keyframes mymove {
+    50% {transform: rotate(-90deg);}
+}
+
+/******************Estilo seccion footer****************/
+footer.color {
+    background-color: white;
+}
+
+footer article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+.leyenda {
+    font-size: 12px;
+}
+
+.icon {
+    font-size: 2em;
+    color: var(--color-celeste);
+    margin-bottom: 10px;
+}
+
+/*****************Estilo formulario login **************/
+
+.login {
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
+  
+  .input-forma {
+      width: 95%;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 0px;
+  }
+  
+  .input-btn {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 0px;
+  }
+  
+  .login-btn {
+      color: white;
+      background-color:#0044AA;
+  }
+
+  /*************Estilo formulario register *************/
+
+.datos {
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+input.register {
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;  
+}
+
+.input-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+button.envio {
+    color: white;
+    background-color:#0044AA;
+}
+
+button.reset {
+    color: white;
+    background-color: #AA0044;
+}
+
+button.reset:hover {background-color: #CC1155;}
+
+h2.register {font-size: 24px;}   
+
+/*************************************/
+/*****Adaptacion a responsive*********/
+
+@media (min-width: 361px) {
+    .logo {
+        padding: 3%;
+        width: 20%;
+    }
+    .header .search {
+        width: 165%;
+    }
+    .pos-lupa {
+        right: 38%;
+        top: 7%;
+    }
+    .cuotas {
+        position: absolute;
+        top: 5%;
+        left: 64%;
+    }
+
+    div.menu {display: none;}
+    nav.navegacion {display: inline}
+    nav.navegacion {
+        display: flex;
+        justify-content: space-between;    
+    }
+    nav.navegacion {
+        padding: 20px;
+        font-size: 12px;
+    }
+    .nav-derecha {justify-content: flex-start;}
+    .nav-izquierda {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-derecha a {
+        padding: 10px;
+    }
+    .nav-izquierda div {
+        padding: 0px 10px;
+    }
+    .nav-izquierda a {
+        padding: 0px 4px;
+    }
+
+    .visitas, .ofertas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productos {
+        width: 46%;
+    }
+    
+}
+
+
+@media (min-width: 769px) {
+
+    .productos { width: 22%;};
+    .productos:hover .truck-icon {
+        animation: mymove 5s;
+    }
+    
+    @keyframes mymove {
+        50% {transform: rotate(-90deg);}
+    }
+
+    article {
+        width: 33%;
+        flex-grow: 1;
+    }
+
+    footer {padding: 5% !important;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
